@@ -77,7 +77,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             : 'bg-gradient-to-b from-[#29221E]/65 to-transparent text-[#F5F1E9] py-5'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex items-center justify-between gap-2">
+        <div className="max-w-7xl mx-auto px-3.5 sm:px-8 lg:px-12 flex items-center justify-between gap-2">
           {/* Desktop Left Links */}
           <nav aria-label="Primary navigation left" className="hidden lg:flex items-center gap-7">
             {leftLinks.map((link) => (
@@ -92,13 +92,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Mobile Menu Trigger */}
-          <div className="flex lg:hidden items-center">
+          <div className="flex lg:hidden items-center shrink-0">
             <button
               type="button"
               onClick={() => setMobileOpen(true)}
               aria-label={t.openMenuAria}
               aria-expanded={mobileOpen}
-              className="p-2 -ml-2 cursor-pointer transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B78358]"
+              className="p-1.5 -ml-1.5 cursor-pointer transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B78358]"
             >
               <Menu className="w-5 h-5 stroke-[1.5]" />
             </button>
@@ -107,16 +107,16 @@ export const Navbar: React.FC<NavbarProps> = ({
           {/* Center Brand Logo */}
           <a
             href="#top"
-            className="flex items-center gap-2 sm:gap-2.5 min-w-0 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B78358]"
+            className="flex items-center gap-1.5 sm:gap-2.5 shrink-0 group focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B78358]"
           >
-            <BrandMark className="w-5 h-5 sm:w-6 sm:h-6 shrink-0 transition-transform duration-500 group-hover:scale-105" />
-            <span className="font-serif text-[15px] sm:text-xl tracking-[0.12em] sm:tracking-[0.18em] font-medium uppercase whitespace-nowrap">
+            <BrandMark className="w-4 h-4 sm:w-6 sm:h-6 shrink-0 transition-transform duration-500 group-hover:scale-105" />
+            <span className="font-serif text-[13px] min-[400px]:text-[15px] sm:text-xl tracking-[0.07em] min-[400px]:tracking-[0.12em] sm:tracking-[0.18em] font-medium uppercase whitespace-nowrap">
               {BRAND_INFO.name}
             </span>
           </a>
 
           {/* Desktop Right Links + Language Switcher + Cart */}
-          <div className="flex items-center gap-2 sm:gap-5 lg:gap-7">
+          <div className="flex items-center gap-1.5 sm:gap-5 lg:gap-7 shrink-0">
             <nav aria-label="Primary navigation right" className="hidden lg:flex items-center gap-7">
               {rightLinks.map((link) => (
                 <a
@@ -133,7 +133,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div
               role="group"
               aria-label="Language switcher"
-              className={`inline-flex items-center border text-[10px] tracking-[0.14em] font-medium transition-colors ${
+              className={`inline-flex items-center border text-[9px] sm:text-[10px] tracking-[0.08em] sm:tracking-[0.14em] font-medium transition-colors ${
                 scrolled
                   ? 'border-[#29221E]/20 bg-[#EFE9DC]/60'
                   : 'border-[#F5F1E9]/30 bg-[#29221E]/30 backdrop-blur-xs'
@@ -147,7 +147,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     type="button"
                     onClick={() => onChangeLang(code)}
                     aria-pressed={active}
-                    className={`px-2 py-1.5 uppercase cursor-pointer transition-colors ${
+                    className={`px-1.5 py-1 sm:px-2 sm:py-1.5 uppercase cursor-pointer transition-colors ${
                       active
                         ? scrolled
                           ? 'bg-[#29221E] text-[#F5F1E9]'
@@ -167,7 +167,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               type="button"
               onClick={onOpenCart}
               aria-label={`${t.bag} (${cartCount})`}
-              className={`flex items-center gap-2 px-2.5 sm:px-3.5 py-1.5 sm:py-2 text-[11px] uppercase tracking-[0.18em] font-medium border transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B78358] ${
+              className={`flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3.5 py-1 sm:py-2 text-[11px] uppercase tracking-[0.18em] font-medium border transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B78358] ${
                 scrolled
                   ? 'border-[#29221E]/20 hover:border-[#29221E] hover:bg-[#29221E] hover:text-[#F5F1E9]'
                   : 'border-[#F5F1E9]/35 bg-[#29221E]/25 backdrop-blur-xs hover:bg-[#F5F1E9] hover:text-[#29221E]'
@@ -176,7 +176,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <ShoppingBag className="w-3.5 h-3.5 stroke-[1.6]" />
               <span className="hidden sm:inline">{t.bag}</span>
               <span
-                className={`tabular-nums inline-flex items-center justify-center min-w-[18px] h-[18px] px-1 text-[10px] transition-colors ${
+                className={`tabular-nums inline-flex items-center justify-center min-w-[16px] sm:min-w-[18px] h-[16px] sm:h-[18px] px-1 text-[10px] transition-colors ${
                   cartCount > 0
                     ? 'bg-[#B78358] text-white'
                     : scrolled
