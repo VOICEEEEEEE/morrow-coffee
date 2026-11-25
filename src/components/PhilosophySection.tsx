@@ -99,11 +99,11 @@ export const PhilosophySection: React.FC<PhilosophySectionProps> = ({ lang }) =>
   return (
     <section
       id="philosophy"
-      className="bg-[#F5F1E9] text-[#29221E] py-20 sm:py-28 lg:py-36 border-b border-[#29221E]/10 overflow-x-clip"
+      className="bg-[#F5F1E9] text-[#29221E] py-14 sm:py-16 lg:py-22 border-b border-[#29221E]/10 overflow-x-clip"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Eyebrow */}
-        <div className="flex items-center justify-between border-b border-[#29221E]/12 pb-4 mb-12 lg:mb-16">
+        <div className="flex items-center justify-between border-b border-[#29221E]/12 pb-4 mb-10 lg:mb-12">
           <span className="text-[11px] uppercase tracking-[0.24em] text-[#73765C] font-medium">
             {t.eyebrow}
           </span>
@@ -118,7 +118,7 @@ export const PhilosophySection: React.FC<PhilosophySectionProps> = ({ lang }) =>
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.25 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-4xl mb-16 lg:mb-20"
+          className="max-w-4xl mb-10 lg:mb-14"
         >
           <h2 className="font-serif text-4xl sm:text-6xl lg:text-[4.25rem] leading-[0.98] font-light tracking-[-0.02em]">
             {t.titleStart}{' '}

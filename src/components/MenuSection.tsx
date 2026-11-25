@@ -46,7 +46,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
   return (
     <section
       id="menu"
-      className="bg-[#EFE9DC] text-[#29221E] py-20 sm:py-28 lg:py-32 border-b border-[#29221E]/10 overflow-x-clip"
+      className="bg-[#EFE9DC] text-[#29221E] py-14 sm:py-16 lg:py-20 border-b border-[#29221E]/10 overflow-x-clip"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Eyebrow */}
@@ -169,7 +169,7 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
                         </span>
                       </div>
 
-                      <p className="text-[13px] text-[#5B5048] leading-relaxed line-clamp-2 mb-3">
+                      <p className="text-[13px] text-[#5B5048] leading-relaxed mb-3">
                         {item.description[lang]}
                       </p>
 

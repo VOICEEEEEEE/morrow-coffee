@@ -15,16 +15,13 @@ export const ReviewsSection: React.FC<ReviewsSectionProps> = ({ lang }) => {
   return (
     <section
       id="reviews"
-      className="bg-[#EBE4D6] text-[#29221E] py-20 sm:py-28 lg:py-32 border-b border-[#29221E]/10 overflow-x-clip"
+      className="bg-[#EBE4D6] text-[#29221E] py-14 sm:py-16 lg:py-20 border-b border-[#29221E]/10 overflow-x-clip"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Eyebrow */}
-        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#29221E]/12 pb-4 mb-12">
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#29221E]/12 pb-4 mb-8">
           <span className="text-[11px] uppercase tracking-[0.24em] text-[#73765C] font-medium">
             {t.eyebrow}
-          </span>
-          <span className="text-[10px] uppercase tracking-[0.18em] text-[#665B54] border border-[#29221E]/15 px-3 py-1 bg-[#F5F1E9]/60">
-            {t.demoBadge}
           </span>
         </div>
 

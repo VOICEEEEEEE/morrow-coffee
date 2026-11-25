@@ -20,11 +20,11 @@ export const AtmosphereSection: React.FC<AtmosphereSectionProps> = ({
   return (
     <section
       id="atmosphere"
-      className="bg-[#29221E] text-[#F5F1E9] py-20 sm:py-28 lg:py-36 overflow-hidden"
+      className="bg-[#29221E] text-[#F5F1E9] py-14 sm:py-16 lg:py-22 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Eyebrow */}
-        <div className="flex items-center justify-between border-b border-[#F5F1E9]/14 pb-4 mb-12">
+        <div className="flex items-center justify-between border-b border-[#F5F1E9]/14 pb-4 mb-8">
           <span className="text-[11px] uppercase tracking-[0.24em] text-[#B78358] font-medium">
             {t.eyebrow}
           </span>
@@ -34,7 +34,7 @@ export const AtmosphereSection: React.FC<AtmosphereSectionProps> = ({
         </div>
 
         {/* Section Heading */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-14 lg:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-10 lg:mb-14">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

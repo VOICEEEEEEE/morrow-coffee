@@ -7,11 +7,11 @@ export const BRAND_INFO = {
     en: '142 Mercer Row, Old Town District',
   } as Record<Lang, string>,
   addressLine2: {
-    ru: 'Демо-локация · Концепт-флагман',
+    ru: 'Москва · 107031',
     en: 'Portland, OR 97204',
   } as Record<Lang, string>,
   fullAddress: {
-    ru: 'Камергерский пер., 14 · Исторический центр (Демо-локация)',
+    ru: 'Камергерский пер., 14 · Исторический центр, Москва',
     en: '142 Mercer Row, Old Town District, Portland, OR 97204',
   } as Record<Lang, string>,
   coordinatesLabel: '45.5202° N, 122.6742° W',
@@ -40,8 +40,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 4.5,
     priceRub: 360,
     description: {
-      ru: 'Двойной ристретто на фирменном бленде Эфиопии и Колумбии под шелковистой глянцевой микропеной.',
-      en: 'Double ristretto of our house Ethiopian & Colombian blend folded under glossy, micro-textured steamed milk.',
+      ru: 'Двойной ристретто на бленде Эфиопии и Колумбии с шёлковой микропеной.',
+      en: 'Double ristretto of Ethiopian & Colombian beans with silky microfoam.',
     },
     tastingNotes: {
       ru: 'Жареный фундук · Тёмный какао · Бархатный финиш',
@@ -60,8 +60,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.5,
     priceRub: 420,
     description: {
-      ru: 'Мягкий двойной эспрессо с домашним сиропом на основе стручковой мадагаскарской ванили и нежного молока.',
-      en: 'Velvety double espresso balanced with cold-infused Madagascar vanilla bean syrup and gently steamed milk.',
+      ru: 'Двойной эспрессо с домашним сиропом из стручковой мадагаскарской ванили.',
+      en: 'Double espresso with house-infused Madagascar vanilla bean syrup.',
     },
     tastingNotes: {
       ru: 'Бурбонская ваниль · Сливочный крем · Карамель',
@@ -79,8 +79,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.25,
     priceRub: 410,
     description: {
-      ru: 'Насыщенный эспрессо под плотной шапкой молочной пены с нашей томлёной солёной карамелью.',
-      en: 'Rich espresso crowned with sculpted microfoam and our slow-cooked sea-salt amber caramel drizzle.',
+      ru: 'Насыщенный эспрессо под плотной молочной пеной и солёной карамелью.',
+      en: 'Rich espresso with sculpted microfoam and slow-cooked sea-salt caramel.',
     },
     tastingNotes: {
       ru: 'Жжёный сахар · Морская соль · Жареный миндаль',
@@ -98,8 +98,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.75,
     priceRub: 450,
     description: {
-      ru: 'Церемониальная матча первого урожая из Удзи, взбитая вручную венчиком и поданная с холодным овсяным молоком.',
-      en: 'First-harvest Uji ceremonial matcha hand-whisked to order and poured over crystalline ice and cold oat milk.',
+      ru: 'Церемониальная матча из Удзи, взбитая вручную на овсяном молоке со льдом.',
+      en: 'First-harvest Uji ceremonial matcha hand-whisked over ice and oat milk.',
     },
     tastingNotes: {
       ru: 'Сладкий умами · Свежий бамбук · Овсяный крем',
@@ -118,8 +118,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 3.25,
     priceRub: 260,
     description: {
-      ru: 'Выверенная двойная экстракция из 18 г зерна в тёплой керамической чашке со стаканом прохладной воды.',
-      en: 'Precisely dialed 18g double extraction served in warm stoneware with a sparkling mineral palate cleanser.',
+      ru: 'Двойная экстракция из 18 г зерна в тёплой керамике со стаканом воды.',
+      en: 'Dialed 18g double extraction in warm stoneware with sparkling water.',
     },
     tastingNotes: {
       ru: 'Бергамот · Молочный шоколад · Тростник',
@@ -137,8 +137,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.75,
     priceRub: 440,
     description: {
-      ru: 'Яркий эспрессо поверх охлаждённого сгущённого молока, льда и шёлковой пены с лёгкой нотой корицы.',
-      en: 'Bold espresso pulled directly over chilled sweetened condensed milk and silky microfoam with warm cinnamon dust.',
+      ru: 'Яркий эспрессо поверх сгущённого молока со льдом и лёгкой нотой корицы.',
+      en: 'Bold espresso over chilled condensed milk, ice, and warm cinnamon.',
     },
     tastingNotes: {
       ru: 'Сливочная карамель · Тёплая корица · Бархатный кофе',
@@ -156,8 +156,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 6.0,
     priceRub: 470,
     description: {
-      ru: 'Пралине из сицилийской фисташки собственного помола с двойным эспрессо и дроблёным орехом.',
-      en: 'House-stoneground Sicilian pistachio praline folded into double espresso and topped with crushed roasted kernels.',
+      ru: 'Пралине из сицилийской фисташки, двойной эспрессо и дроблёный орех.',
+      en: 'Stoneground Sicilian pistachio praline with double espresso and nuts.',
     },
     tastingNotes: {
       ru: 'Жареная фисташка · Марципан · Какао-бобы',
@@ -176,8 +176,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.0,
     priceRub: 390,
     description: {
-      ru: 'Моносорт Кения AA холодного настаивания в течение 18 часов, подаётся на крупном кристальном кубе льда.',
-      en: 'Single-origin Kenyan AA slow-steeped for 18 hours in filtered water and served over a hand-cut clear ice block.',
+      ru: 'Кения AA 18-часового настаивания на крупном кристальном кубе льда.',
+      en: 'Single-origin Kenyan AA slow-steeped 18 hours over a clear ice block.',
     },
     tastingNotes: {
       ru: 'Чёрная смородина · Спелая слива · Чистый какао',
@@ -195,8 +195,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 5.5,
     priceRub: 430,
     description: {
-      ru: 'Киотский зелёный чай каменного помола, взбитый бамбуковым часэном в тёплой керамической пиале.',
-      en: 'Stone-milled Kyoto green tea whisked with bamboo chasen into textured, warm milk inside a handmade ceramic bowl.',
+      ru: 'Киотский чай каменного помола, взбитый венчиком в тёплой пиале.',
+      en: 'Stone-milled Kyoto green tea bamboo-whisked into warm oat milk.',
     },
     tastingNotes: {
       ru: 'Нежный умами · Сладкий крем · Нефритовый лист',
@@ -214,8 +214,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 4.75,
     priceRub: 370,
     description: {
-      ru: 'Двойной эспрессо на мытой Эфиопии, аккуратно влитый в холодную родниковую воду со льдом.',
-      en: 'Double shot of washed single-origin Ethiopian espresso poured gently over chilled spring water and crystal ice.',
+      ru: 'Двойной эспрессо на мытой Эфиопии в холодной родниковой воде со льдом.',
+      en: 'Washed Ethiopian double espresso over chilled spring water and ice.',
     },
     tastingNotes: {
       ru: 'Бергамот · Дикий жасмин · Чистый шоколад',
@@ -234,8 +234,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 4.75,
     priceRub: 360,
     description: {
-      ru: 'Слоёное тесто 72-часовой холодной ферментации, выпеченное в 06:00 утра на фермерском сливочном масле.',
-      en: '72-hour cold-fermented sourdough lamination baked every morning at 6:00 AM with French Normandy cultured butter.',
+      ru: 'Слоёное тесто 72-часовой ферментации на фермерском сливочном масле.',
+      en: '72-hour cold-fermented sourdough pastry baked with cultured butter.',
     },
     tastingNotes: {
       ru: 'Золотистые соты · Топлёное масло · Хрустящая корочка',
@@ -254,8 +254,8 @@ export const MENU_ITEMS: MenuItem[] = [
     priceUsd: 7.5,
     priceRub: 560,
     description: {
-      ru: 'Карамелизованная тёмно-янтарная корочка и кремовая сердцевина с мадагаскарской ванилью — идеальная пара к эспрессо.',
-      en: 'Caramelized deep-amber crust yielding to a cool, custardy Madagascar vanilla heart—crafted to pair with espresso.',
+      ru: 'Карамелизованная корочка и нежная ванильная сердцевина к эспрессо.',
+      en: 'Caramelized crust with a cool, custardy Madagascar vanilla heart.',
     },
     tastingNotes: {
       ru: 'Жжёные сливки · Ваниль Бурбон · Нежный мусс',
@@ -354,8 +354,8 @@ export const DEMO_REVIEWS: ReviewItem[] = [
     },
     author: { ru: 'Анна Линдквист', en: 'Clara Lindqvist' },
     role: {
-      ru: 'Архитектор · Демо-отзыв гостя',
-      en: 'Architectural Designer · Sample Guest Note',
+      ru: 'Архитектор',
+      en: 'Architectural Designer',
     },
     rating: 5,
     favoriteOrder: {
@@ -371,8 +371,8 @@ export const DEMO_REVIEWS: ReviewItem[] = [
     },
     author: { ru: 'Артём Волков', en: 'Julian Vance' },
     role: {
-      ru: 'Арт-директор · Демо-отзыв гостя',
-      en: 'Creative Director · Sample Guest Note',
+      ru: 'Арт-директор',
+      en: 'Creative Director',
     },
     rating: 5,
     favoriteOrder: {
@@ -388,8 +388,8 @@ export const DEMO_REVIEWS: ReviewItem[] = [
     },
     author: { ru: 'Елена Моралес', en: 'Elena Morales' },
     role: {
-      ru: 'Гастрономический журналист · Демо-отзыв',
-      en: 'Culinary Writer · Sample Guest Note',
+      ru: 'Гастрономический журналист',
+      en: 'Culinary Writer',
     },
     rating: 5,
     favoriteOrder: {

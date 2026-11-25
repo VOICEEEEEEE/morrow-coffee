@@ -114,11 +114,11 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ lang }) => {
   return (
     <section
       id="location"
-      className="bg-[#F5F1E9] text-[#29221E] py-20 sm:py-28 lg:py-36 overflow-x-clip"
+      className="bg-[#F5F1E9] text-[#29221E] py-14 sm:py-16 lg:py-22 overflow-x-clip"
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
         {/* Eyebrow */}
-        <div className="flex items-center justify-between border-b border-[#29221E]/12 pb-4 mb-12 lg:mb-16">
+        <div className="flex items-center justify-between border-b border-[#29221E]/12 pb-4 mb-10 lg:mb-12">
           <span className="text-[11px] uppercase tracking-[0.24em] text-[#73765C] font-medium">
             {t.eyebrow}
           </span>
@@ -128,7 +128,7 @@ export const LocationSection: React.FC<LocationSectionProps> = ({ lang }) => {
         </div>
 
         {/* Top Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-14">
           {/* Left Column: Address, Hours, Phone, Email, Directions CTA */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}

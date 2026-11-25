@@ -26,7 +26,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
     <section
       id="top"
       ref={heroRef}
-      className="relative min-h-[94svh] lg:min-h-[96vh] flex flex-col justify-end overflow-hidden bg-[#29221E] text-[#F5F1E9]"
+      className="relative min-h-[86svh] lg:min-h-[88vh] flex flex-col justify-end overflow-hidden bg-[#29221E] text-[#F5F1E9]"
     >
       {/* Full-bleed atmospheric coffee interior with subtle parallax */}
       <motion.div
@@ -110,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.48 }}
-          className="mt-14 sm:mt-20 pt-5 border-t border-[#F5F1E9]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#F5F1E9]/80"
+          className="mt-10 sm:mt-14 pt-4 border-t border-[#F5F1E9]/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-xs text-[#F5F1E9]/80"
         >
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
             <div>

@@ -31,9 +31,9 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
   const nav = UI_TEXT[lang].nav;
 
   return (
-    <footer className="bg-[#29221E] text-[#F5F1E9] pt-20 pb-12 border-t border-[#F5F1E9]/10 overflow-x-clip">
+    <footer className="bg-[#29221E] text-[#F5F1E9] pt-14 pb-10 border-t border-[#F5F1E9]/10 overflow-x-clip">
       <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-[#F5F1E9]/12">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-[#F5F1E9]/12">
           {/* Brand Summary */}
           <div className="md:col-span-5 space-y-5">
             <a href="#top" className="inline-flex items-center gap-3 group">
@@ -119,12 +119,11 @@ export const Footer: React.FC<FooterProps> = ({ lang }) => {
               <p>
                 <a
                   href={`mailto:${BRAND_INFO.email}`}
-                  className="hover:text-white transition-colors break-all"
+                  className="hover:text-white transition-colors whitespace-nowrap text-[13px]"
                 >
                   {BRAND_INFO.email}
                 </a>
               </p>
-              <p className="text-xs text-[#F5F1E9]/50 pt-2">{t.demoContactNote}</p>
             </div>
           </div>
         </div>
